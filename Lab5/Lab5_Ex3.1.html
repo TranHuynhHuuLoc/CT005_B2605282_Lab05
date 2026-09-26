@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Infographic Nhiệm vụ 2.1 và video YouTube Nhiệm vụ 2.2 của Lab 05.">
+	<title>Lab 05 | Infographic và video</title>
+	<style>
+		:root {
+			color-scheme: light;
+			--ink: #202b29;
+			--muted: #566461;
+			--paper: #f5f3ec;
+			--line: #c9d0c8;
+			--accent: #b7432e;
+			--accent-soft: #e6b34f;
+			--surface: #fffefa;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			background:
+				radial-gradient(ellipse at 4% 3%, rgba(230, 179, 79, 0.2), transparent 28rem),
+				var(--paper);
+			color: var(--ink);
+			font-family: Georgia, "Times New Roman", serif;
+		}
+
+		.page {
+			width: min(1160px, calc(100% - 48px));
+			margin: 0 auto;
+			padding: 54px 0 28px;
+		}
+
+		.eyebrow,
+		.section-label,
+		footer {
+			font-family: "Segoe UI", Tahoma, sans-serif;
+		}
+
+		.eyebrow {
+			margin: 0 0 14px;
+			color: var(--accent);
+			font-size: 0.78rem;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+
+		h1 {
+			max-width: 760px;
+			margin: 0;
+			font-size: clamp(2.4rem, 5vw, 4.5rem);
+			font-weight: 500;
+			line-height: 1.03;
+		}
+
+		.intro {
+			max-width: 650px;
+			margin: 20px 0 44px;
+			color: var(--muted);
+			font-family: "Segoe UI", Tahoma, sans-serif;
+			font-size: 1.05rem;
+			line-height: 1.7;
+		}
+
+		.content {
+			display: grid;
+			grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+			gap: 42px;
+			align-items: start;
+		}
+
+		section {
+			min-width: 0;
+		}
+
+		.section-heading {
+			display: flex;
+			align-items: baseline;
+			gap: 12px;
+			margin-bottom: 16px;
+			padding-bottom: 12px;
+			border-bottom: 1px solid var(--line);
+		}
+
+		.section-label {
+			color: var(--accent);
+			font-size: 0.75rem;
+			font-weight: 700;
+		}
+
+		h2 {
+			margin: 0;
+			font-size: 1.55rem;
+			font-weight: 500;
+		}
+
+		.media-frame {
+			overflow: hidden;
+			background: var(--surface);
+			border: 1px solid var(--line);
+		}
+
+		.infographic img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+
+		.video-frame {
+			aspect-ratio: 16 / 9;
+		}
+
+		.video-frame iframe {
+			display: block;
+			width: 100%;
+			height: 100%;
+			border: 0;
+		}
+
+		footer {
+			margin-top: 48px;
+			padding-top: 16px;
+			border-top: 1px solid var(--line);
+			color: var(--muted);
+			font-size: 0.82rem;
+			line-height: 1.6;
+		}
+
+		@media (max-width: 760px) {
+			.page {
+				width: min(100% - 32px, 600px);
+				padding-top: 36px;
+			}
+
+			.intro {
+				margin-bottom: 32px;
+			}
+
+			.content {
+				grid-template-columns: 1fr;
+				gap: 34px;
+			}
+
+			footer {
+				margin-top: 36px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<main class="page">
+		<header>
+			<p class="eyebrow">Lab 05 · Bài tập thực hành</p>
+			<h1>Infographic và video</h1>
+			<p class="intro">Cùng xem infographic của Nhiệm vụ 2.1 và video hướng dẫn cho Nhiệm vụ 2.2.</p>
+		</header>
+
+		<div class="content">
+			<section aria-labelledby="infographic-title">
+				<div class="section-heading">
+					<span class="section-label">Nhiệm vụ 2.1</span>
+					<h2 id="infographic-title">Infographic</h2>
+				</div>
+				<div class="media-frame infographic">
+					<img src="Lab05_Ex2.1.png" alt="Infographic của Nhiệm vụ 2.1, Lab 05">
+				</div>
+			</section>
+
+			<section aria-labelledby="video-title">
+				<div class="section-heading">
+					<span class="section-label">Nhiệm vụ 2.2</span>
+					<h2 id="video-title">Video YouTube</h2>
+				</div>
+				<div class="media-frame video-frame">
+					<iframe
+						src="https://www.youtube.com/embed/5_J8V-kYRag"
+						title="Video YouTube cho Nhiệm vụ 2.2, Lab 05"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin"
+						allowfullscreen>
+					</iframe>
+				</div>
+			</section>
+		</div>
+
+		<footer>
+			Ghi chú bản quyền: Hình ảnh infographic và video thuộc quyền của chủ sở hữu tương ứng. Vui lòng ghi nguồn và xin phép trước khi sử dụng lại.
+		</footer>
+	</main>
+</body>
+</html>
